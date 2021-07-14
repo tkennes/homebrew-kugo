@@ -5,28 +5,28 @@
 class Kugo < Formula
   desc "Golang based CLI for Jenkins API."
   homepage "https://github.com/tkennes/kugo"
-  version "1.0.18"
+  version "1.0.20"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "http://github.com/tkennes/kugo/releases/download/v1.0.18/kugo_1.0.18_Darwin_x86_64.tar.gz"
-      sha256 "85c525b5f4130723c9feb0bce9acc61b67416a722f35997bd9c950361eb29070"
+      url "http://github.com/tkennes/kugo/releases/download/v1.0.20/kugo_1.0.20_Darwin_x86_64.tar.gz"
+      sha256 "450b93fdcc9d70097c3ff8966485ba4461e06f6a4bf66b922588bde0adc9bd8e"
     end
     if Hardware::CPU.arm?
-      url "http://github.com/tkennes/kugo/releases/download/v1.0.18/kugo_1.0.18_Darwin_arm64.tar.gz"
-      sha256 "47afae2b2b7e16f0ad0c8284a36ccb19ef7ed1c6d4ddda8e8ff83e8313e2f9bf"
+      url "http://github.com/tkennes/kugo/releases/download/v1.0.20/kugo_1.0.20_Darwin_arm64.tar.gz"
+      sha256 "ead0845c3309788f58f514cd34d0f18df671d1025a06c58779559e99e98bf27e"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "http://github.com/tkennes/kugo/releases/download/v1.0.18/kugo_1.0.18_Linux_x86_64.tar.gz"
-      sha256 "abe752c2dbb1860b386201b1aeaabf0100b7f425ede13c75618f79021be26a65"
+      url "http://github.com/tkennes/kugo/releases/download/v1.0.20/kugo_1.0.20_Linux_x86_64.tar.gz"
+      sha256 "5d33c782c35c1357a00821a3b4bfc1e74a4194190a7e95315d60601e716e546c"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/tkennes/kugo/releases/download/v1.0.18/kugo_1.0.18_Linux_arm64.tar.gz"
-      sha256 "a3f2274a953518258cdf3b90136fd7e35107592b6193508b4a49cf5b513a463a"
+      url "http://github.com/tkennes/kugo/releases/download/v1.0.20/kugo_1.0.20_Linux_arm64.tar.gz"
+      sha256 "edd837d3b9846f0e879814f5082ae2d028d860975b6f3fdffd9818248f5a3204"
     end
   end
 
